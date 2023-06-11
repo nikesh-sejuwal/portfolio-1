@@ -2,14 +2,19 @@
 
 :root {
    --primary-color: rgb(211, 242, 150);
-   --secondary-color: #f0f8ff;
-   --overlay-color: rgba(18, 21, 23, 0.55);
+   --secondary-color: #ffffff;
+   --overlay-color: rgba(211, 242, 150, 0.8);
 }
 
 * {
    padding: 0;
    margin: 0;
 }
+
+p {
+   margin: 0.75rem;
+}
+
 a {
    color: #a5a4a4;
    text-decoration: none;
@@ -25,8 +30,9 @@ body {
    font-family: "Josefin Sans", sans-serif;
 }
 .image-info {
-   background: url("../img/nikesh_no_blob.svg") no-repeat center center/cover;
-   height: 120vh;
+   background: url("../img/widescreen\(lbackground\).svg") no-repeat center
+      center/cover;
+   height: 100vh;
    width: 100%;
 }
 #navbar {
@@ -67,22 +73,21 @@ body {
    border-radius: 10%;
    margin-left: 20px;
    font-size: 18px;
-   border-color: #4831d4;
+   border-color: var(--primary-color);
+   background: var(--primary-color);
    font-weight: bold;
-   background: #4634ba;
 }
 
 .resume .btn:hover,
 .resume .btn a:hover {
    cursor: pointer;
-   color: #f2f2f2;
-   background-color: #3f3f3f;
-   transition: all ease-in-out 0.7s;
+   color: #333;
+   background-color: rgb(224, 233, 204);
    border-color: #3f3f3f;
 }
 
 .resume .btn a {
-   color: #f2f2f2;
+   color: #333;
 }
 
 li {
@@ -100,37 +105,29 @@ li {
 /* paragraph of frontend page */
 
 .front {
-   margin-left: -6rem;
+   margin-left: -7rem;
    color: var(--secondary-color);
    font-size: 20px;
 }
 
 /* Additional words after paragraph of frontend */
 
-.additional {
-   display: flex;
-   max-width: 100%;
-}
-
-/* Col1 and col2 are columns after paragraph of frontend */
-
-.col1,
-.col2 {
-   margin: 5rem;
-   justify-content: space-around;
-   font-size: 18px;
-}
-
 /* Blob photo  */
 .Middle {
    display: flex;
+   margin-top: 2rem;
    justify-content: space-around;
 }
 
-.Middle .photo-info {
+.Middle .photo-info .photo {
    background: url("../img/nikesh_icon.svg") no-repeat center center/cover;
-   height: 300px;
-   width: 250px;
-   margin-top: 3rem;
-   margin-left: 14rem;
+   height: 220px;
+   width: 200px;
+   margin: 2.5rem;
+   /* margin-left: 14rem; */
+}
+.photo-info {
+   margin: 2rem 0;
+   background-color: var(--overlay-color);
+   border-radius: 50%;
 }
