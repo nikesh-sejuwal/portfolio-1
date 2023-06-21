@@ -29,10 +29,11 @@ a {
 body {
    font-family: "Josefin Sans", sans-serif;
 }
+
 .image-info {
    background: url("../img/widescreen\(lbackground\).svg") no-repeat center
       center/cover;
-   height: 100vh;
+   height: 100dvh;
    width: 100%;
 }
 #navbar {
@@ -101,6 +102,12 @@ li {
    color: var(--primary-color);
    font-size: 5rem;
 }
+.frontend-1 {
+   text-align: center;
+   padding-top: 8rem;
+   color: var(--primary-color);
+   font-size: 3.5rem;
+}
 
 /* paragraph of frontend page */
 
@@ -130,4 +137,96 @@ li {
    margin: 2rem 0;
    background-color: var(--overlay-color);
    border-radius: 50%;
+}
+
+/* About image section */
+
+.about-img {
+   background: url("../img/about-section.svg") no-repeat center center/cover;
+   height: 900px;
+   width: 100%;
+}
+
+.about-img h1 {
+   text-align: center;
+}
+
+.p-about {
+   text-align: center;
+   margin: 2rem 15rem;
+   padding: 15px;
+   font-size: 20px;
+   font-weight: 500;
+   border: var(--primary-color) solid 3px;
+   border-radius: 0 8% 0 0;
+   color: var(--secondary-color);
+}
+
+.experience {
+   display: flex;
+   justify-content: right;
+   align-items: center;
+   margin: auto 50px auto 150px;
+}
+
+.box-1 {
+   margin: 20px;
+   padding: 20px;
+   text-align: justify;
+   background: #cbdbaa;
+}
+.box-2 {
+   margin: 20px;
+   padding: 20px;
+   text-align: justify;
+   color: var(--secondary-color);
+   background: #32248f;
+}
+
+/* footer */
+
+.contact-img {
+   background: url("../img/contact-secton.svg") no-repeat center center/cover;
+   height: 500px;
+}
+
+.icon {
+   font-size: 30px;
+   color: #000;
+   margin: 1rem;
+}
+
+.icon:hover {
+   color: #311ea6;
+}
+
+.font-contact {
+   padding-top: 2rem;
+   font-size: 50px;
+   text-align: center;
+   color: var(--primary-color);
+}
+
+.contact-ul {
+   background: #cbdbaa;
+   padding-left: 2rem;
+   border-radius: 4% 25% 4% 4%;
+   margin: 2rem 30rem 2rem 34rem;
+   text-align: justify;
+}
+
+.gap-between {
+   margin-left: 1rem;
+   padding-bottom: 2rem;
+}
+
+.contact-color {
+   font-weight: 500;
+   color: #000;
+   font-size: large;
+}
+
+.contact-color:hover {
+   color: #4831d4;
+   font-weight: 600;
 }
