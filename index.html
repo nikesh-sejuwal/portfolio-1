@@ -5,11 +5,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/style.css" />
+
     <link
       rel="stylesheet"
-      media="(max-width:1200px)"
-      href="./css/semi_wide.css"
+      media="screen and (max-width:433px)"
+      href="./css/small.css"
     />
+
+    <link
+      rel="stylesheet"
+      media="(min-width:434px) and (max-width:599px)"
+      href="./css/land.css"
+    />
+
+    <link
+      rel="stylesheet"
+      media="(max-width:1023px) and (min-width:600px)"
+      href="./css/tab.css"
+    />
+
+    <link
+      rel="stylesheet"
+      media="(max-width:1199px) and (min-width:1024px)"
+      href="./css/lap.css"
+    />
+
+    <link
+      rel="stylesheet"
+      media="(max-width:1540px) and (min-width:1200px)"
+      href="./css/wide.css"
+    />
+
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
@@ -18,17 +44,32 @@
     <title>Nikesh's portfolio</title>
   </head>
   <body id="home">
-    <header>
+    <header id="#home">
       <div class="image-info">
         <nav id="navbar">
           <div id="logo">
-            <a href="#"><img src="./img/logo.svg" alt="my logo" /></a>
+            <a href="#home"><img src="./img/logo.svg" alt="my logo" /></a>
           </div>
           <ul>
-            <li><a href="#" class="current">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Contact</a></li>
+            <li class="naav"><a href="#home" class="current">Home</a></li>
+            <li class="naav"><a href="#about">About</a></li>
+            <li class="naav"><a href="#blog">Blog</a></li>
+            <li class="naav"><a href="#contact">Contact</a></li>
+          </ul>
+          <div class="resume naav">
+            <button class="btn"><a href="#">Resume</a></button>
+          </div>
+
+          <button class="hamburger">
+            <div class="bar"></div>
+          </button>
+        </nav>
+        <nav class="mobile-nav">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
           <div class="resume">
             <button class="btn"><a href="#">Resume</a></button>
@@ -42,7 +83,7 @@
               Student
             </h1>
             <p class="front">
-              CSIT student from Pokhara, Nepal.
+              CSIT student from Nepal.
             </p>
             <p class="front">
               Beginner in this field but love creating webpages.
@@ -55,7 +96,7 @@
       </div>
     </header>
 
-    <section>
+    <section id="about">
       <div class="about-img">
         <div class="about">
           <h1 class="frontend-1">ABOUT ME</h1>
@@ -81,8 +122,8 @@
           <h1 class="frontend-1">My Experiences</h1>
           <div class="experience">
             <div class="box-1">
-              <h2>HTML AND CSS</h2>
-              <p>
+              <h2 class="phone">HTML AND CSS</h2>
+              <p class="phh">
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam
                 praesentium excepturi nam fugit? Soluta explicabo odit maiores.
                 Dignissimos molestias placeat, harum sint tempora, delectus, sit
@@ -90,8 +131,8 @@
               </p>
             </div>
             <div class="box-2">
-              <h2>VIDEO EDITING</h2>
-              <p>
+              <h2 class="phone">VIDEO EDITING</h2>
+              <p class="phh">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus
                 quas laudantium perferendis hic possimus praesentium,
                 necessitatibus explicabo cumque labore totam quidem esse fugiat
@@ -99,8 +140,8 @@
               </p>
             </div>
             <div class="box-1">
-              <h2>JAVASCRIPT (Beginner)</h2>
-              <p>
+              <h2 class="phone">JAVASCRIPT (Beginner)</h2>
+              <p class="phh">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                 Corrupti minima architecto quod omnis consectetur nesciunt iste,
                 illum quos veniam totam soluta a fugiat ut cum, aliquid, odio
@@ -117,14 +158,7 @@
     <section id="contact">
       <div class="contact-img">
         <h2 class="font-contact">Get in Touch</h2>
-        <ul class="contact-ul">
-          <li>
-            <i class="bx bxs-location-plus icon"></i>
-            <span class="gap-between contact-color">
-              Pokhara-11
-            </span>
-          </li>
-
+        <div class="contact-ul">
           <li>
             <a href="mailto:nirajan123n@gmail.com" class="contact-color">
               <i class="bx bxs-envelope icon"></i>
@@ -156,6 +190,17 @@
 
           <li>
             <a
+              href="https://www.linkedin.com/in/nikesh-sejuwal-58a65b257/"
+              target="_blank"
+              class="contact-color"
+            >
+              <i class="bx bxl-linkedin-square icon"></i>
+              <span class="gap-between">Nikesh Sejuwal</span>
+            </a>
+          </li>
+
+          <li>
+            <a
               href="https://github.com/nikesh-sejuwal"
               target="_blank"
               class="contact-color"
@@ -164,8 +209,14 @@
               <span class="gap-between">nikesh-sejuwal</span>
             </a>
           </li>
-        </ul>
+        </div>
       </div>
     </section>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/main.js"></script>
   </body>
 </html>

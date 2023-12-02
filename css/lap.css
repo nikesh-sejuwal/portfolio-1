@@ -1,0 +1,6 @@
+.experience {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  margin: auto 50px auto 150px;
+}

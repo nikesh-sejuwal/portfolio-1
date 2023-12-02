@@ -1,0 +1,84 @@
+.image-info {
+   background: url("../img/widescreen\(lbackground\).svg") no-repeat center
+      center/cover;
+   background-size: auto 1024px;
+   height: 750px;
+   width: 100%;
+}
+
+#navbar ul li a {
+   padding: 1px;
+   border-radius: 50%;
+   margin-left: 40px;
+   font-weight: bold;
+   font-size: 20px;
+}
+
+.frontend {
+   margin: 8rem 0 0.5rem 2rem;
+   color: var(--primary-color);
+   font-size: 4.6rem;
+}
+.frontend-1 {
+   text-align: center;
+   padding-top: 5rem;
+   color: var(--primary-color);
+   font-size: 3.5rem;
+}
+
+/* paragraph of frontend page */
+
+.front {
+   margin-left: 1rem;
+   color: var(--secondary-color);
+   font-size: 19px;
+}
+
+/* contact */
+.about-img {
+   background: url("../img/about-section.svg") no-repeat center center/cover;
+   background-size: auto 1305px;
+   height: 1260px;
+   width: 100%;
+}
+
+.p-about {
+   margin: 2rem 3rem;
+}
+
+/* boxes */
+
+.experience {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   margin: 0rem 1rem;
+}
+
+.box-1 {
+   margin: 20px;
+   padding: 20px;
+   text-align: center;
+}
+.box-2 {
+   margin: 20px;
+   padding: 20px;
+   text-align: center;
+}
+
+/* contact page */
+/* .contact-img {
+   background: url("../img/contact-secton.svg") no-repeat center center/cover;
+   background-size: auto 1196px;
+   height: 500px;
+} */
+
+/* .contact-ul {
+   background: #cbdbaa;
+   padding-left: 1rem;
+   padding: 10px auto;
+   border-radius: 4% 25% 4% 4%;
+   margin: 2rem 11rem;
+   text-align: justify;
+} */

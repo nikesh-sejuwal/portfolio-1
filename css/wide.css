@@ -1,0 +1,32 @@
+/* Top */
+.image-info {
+   background: url("../img/widescreen\(lbackground\).svg") no-repeat center
+      center/cover;
+   background-size: auto 1024px;
+   height: 750px;
+   width: 100%;
+}
+
+/* contact */
+.about-img {
+   height: 944px;
+}
+
+.p-about {
+   margin: 2rem 16rem;
+}
+
+.experience {
+   display: flex;
+   justify-content: right;
+   align-items: center;
+   margin: auto 50px auto 150px;
+}
+
+/* contact page */
+/* .font-contact {
+   padding-top: 2rem;
+   font-size: 50px;
+   text-align: center;
+   color: var(--primary-color);
+} */

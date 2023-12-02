@@ -33,7 +33,8 @@ body {
 .image-info {
    background: url("../img/widescreen\(lbackground\).svg") no-repeat center
       center/cover;
-   height: 100dvh;
+   background-size: auto 1024px;
+   height: 800px;
    width: 100%;
 }
 #navbar {
@@ -46,6 +47,12 @@ body {
    height: 70px;
 }
 
+.hamburger {
+   display: none;
+}
+.mobile-nav {
+   display: none;
+}
 #navbar ul li a {
    padding: 13px;
    border-radius: 50%;
@@ -98,13 +105,13 @@ li {
 /* For frontpage letter (Frontend developer) */
 
 .frontend {
-   margin: 8rem 0 0.5rem -7rem;
+   margin: 8rem 0 0.5rem -1rem;
    color: var(--primary-color);
    font-size: 5rem;
 }
 .frontend-1 {
    text-align: center;
-   padding-top: 8rem;
+   padding-top: 5rem;
    color: var(--primary-color);
    font-size: 3.5rem;
 }
@@ -112,7 +119,7 @@ li {
 /* paragraph of frontend page */
 
 .front {
-   margin-left: -7rem;
+   margin-left: -1.01rem;
    color: var(--secondary-color);
    font-size: 20px;
 }
@@ -143,7 +150,8 @@ li {
 
 .about-img {
    background: url("../img/about-section.svg") no-repeat center center/cover;
-   height: 900px;
+   background-size: auto 1024px;
+   height: 990px;
    width: 100%;
 }
 
@@ -153,13 +161,14 @@ li {
 
 .p-about {
    text-align: center;
-   margin: 2rem 15rem;
+   margin: 2rem 7rem;
    padding: 15px;
    font-size: 20px;
    font-weight: 500;
-   border: var(--primary-color) solid 3px;
+   border: #fff solid 3px;
    border-radius: 0 8% 0 0;
    color: var(--secondary-color);
+   box-shadow: 9px 4px 23px #000;
 }
 
 .experience {
@@ -174,6 +183,7 @@ li {
    padding: 20px;
    text-align: justify;
    background: #cbdbaa;
+   box-shadow: 9px 4px 23px;
 }
 .box-2 {
    margin: 20px;
@@ -181,12 +191,14 @@ li {
    text-align: justify;
    color: var(--secondary-color);
    background: #32248f;
+   box-shadow: 9px 4px 23px #000;
 }
 
 /* footer */
 
 .contact-img {
    background: url("../img/contact-secton.svg") no-repeat center center/cover;
+   background-size: auto 1196px;
    height: 500px;
 }
 
@@ -210,9 +222,12 @@ li {
 .contact-ul {
    background: #cbdbaa;
    padding-left: 2rem;
+   padding: 10px auto;
    border-radius: 4% 25% 4% 4%;
-   margin: 2rem 30rem 2rem 34rem;
+   margin: 2rem auto;
    text-align: justify;
+   max-width: 30rem;
+   box-shadow: 9px 4px 23px #000;
 }
 
 .gap-between {

@@ -1,0 +1,246 @@
+/* regular */
+.phone {
+   font-size: 16px;
+   font-weight: bold;
+}
+
+.phh {
+   font-size: 14px;
+}
+
+#navbar {
+   /* display: none; */
+   display: flex;
+   justify-content: space-around;
+}
+
+#logo img {
+   margin: 20px 0 10px -10px;
+   height: 55px;
+}
+
+.naav {
+   display: none;
+}
+
+/* HAMBURGER */
+.hamburger {
+   position: relative;
+   margin-top: 30px;
+   display: block;
+   width: 35px;
+   height: 25px;
+   z-index: 99;
+   cursor: pointer;
+   appearance: none;
+   background: none;
+   outline: none;
+   border: none;
+}
+
+.hamburger .bar,
+.hamburger::after,
+.hamburger::before {
+   content: "";
+   display: block;
+   width: 100%;
+   height: 5px;
+   background-color: #fff;
+   margin: 6px 0;
+   transition: 0.4s;
+}
+
+.hamburger.is-active:before {
+   transform: rotate(-45deg) translate(-8px, 6px);
+}
+
+.hamburger.is-active:after {
+   transform: rotate(45deg) translate(-9px, -8px);
+}
+
+.hamburger.is-active .bar {
+   opacity: 0;
+}
+
+.mobile-nav {
+   position: fixed;
+   top: 0;
+   left: 100%;
+   width: 100%;
+   min-height: 100vh;
+   display: block;
+   z-index: 98;
+   background-color: black;
+   padding-top: 120px;
+   transition: 0.4s;
+}
+/* .mobile-na {
+   position: fixed;
+   top: 0;
+   left: 100%;
+   width: 100%;
+   min-height: 100vh;
+   display: block;
+   z-index: 98;
+   background-color: black;
+   padding-top: 120px;
+   transition: 0.4s;
+} */
+
+.mobile-nav.is-active {
+   left: 0;
+}
+/* .mobile-na.is-active {
+   left: 0;
+} */
+
+.mobile-nav ul li a {
+   display: block;
+   text-align: center;
+   margin-bottom: 16px;
+   padding: 16px;
+   color: #fff;
+}
+
+.mobile-nav ul li a:hover {
+   color: rgb(224, 30, 30);
+}
+
+.mobile-nav .resume .btn {
+   display: block;
+   text-align: center;
+   margin: 16px auto;
+   color: #000;
+}
+
+/* imagg */
+.image-info {
+   background: url("../img/for\ mobile\(background\).svg") no-repeat center
+      center/cover;
+   background-size: auto 771px;
+   height: 650px;
+   min-width: 100%;
+}
+
+#navbar ul li a {
+   padding: 1px;
+   border-radius: 50%;
+   margin-left: 40px;
+   font-weight: bold;
+   font-size: 20px;
+}
+
+/* Imagee */
+
+.Middle {
+   display: flex;
+   flex-direction: column;
+   margin-top: -3rem;
+   align-items: center;
+   /* justify-content: space-around; */
+}
+
+.photo-info {
+   margin-top: 6rem;
+   order: -1;
+}
+
+.Middle .photo-info .photo {
+   background: url("../img/nikesh_icon.svg") no-repeat center center/cover;
+   height: 125px;
+   width: 120px;
+   margin: 1.5rem;
+   /* margin-left: 14rem; */
+}
+
+/* .text {
+   margin: 1px auto;
+} */
+
+.frontend {
+   margin: -1rem 0 0.5rem 2rem;
+   color: var(--primary-color);
+   font-size: 3.2rem;
+}
+.frontend-1 {
+   text-align: center;
+   padding-top: 5rem;
+   color: var(--primary-color);
+   font-size: 2.2rem;
+}
+
+/* paragraph of frontend page */
+
+.front {
+   margin-left: 2rem;
+   color: var(--secondary-color);
+   font-size: 16px;
+}
+
+/* contact */
+.about-img {
+   background: url("../img/about-section.svg") no-repeat center center/cover;
+   background-size: auto 1305px;
+   height: 1260px;
+   width: 100%;
+}
+
+.p-about {
+   margin: 2rem 1rem;
+   font-size: 16px;
+   font-weight: 100;
+}
+
+/* boxes */
+
+.experience {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   margin: 0rem 1rem;
+}
+
+.box-1 {
+   margin: 15px;
+   padding: 10px;
+   text-align: center;
+}
+.box-2 {
+   margin: 10px;
+   padding: 10px;
+   text-align: center;
+}
+
+/* contact page */
+
+.font-contact {
+   font-size: 2.6rem;
+}
+.contact-img {
+   background: url("../img/contact-secton.svg") no-repeat center center/cover;
+   background-size: auto 450px;
+   height: 437px;
+}
+
+.icon {
+   font-size: 25px;
+   color: #000;
+   margin: 0.8rem;
+}
+
+.gap-between {
+   margin-left: 0.5rem;
+   font-size: 16px;
+}
+
+.contact-ul {
+   background: #cbdbaa;
+   padding-left: 2rem;
+   padding: 10px auto;
+   border-radius: 4% 25% 4% 4%;
+   margin: 2rem auto;
+   text-align: justify;
+   max-width: 17rem;
+   box-shadow: 9px 4px 23px #000;
+}
