@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
 
 :root {
-   --primary-color: rgb(211, 242, 150);
-   --secondary-color: #ffffff;
+   --primary-color: #c8ddb2;
+   --secondary-color: #b8b4b4;
    --overlay-color: rgba(211, 242, 150, 0.8);
 }
 
@@ -62,7 +62,7 @@ body {
 }
 
 #navbar ul li a:hover {
-   color: var(--primary-color);
+   color: #d3f296;
    transition: all ease-in-out 0.5s;
 }
 
@@ -81,8 +81,8 @@ body {
    border-radius: 10%;
    margin-left: 20px;
    font-size: 18px;
-   border-color: var(--primary-color);
-   background: var(--primary-color);
+   border-color: #d3f296;
+   background: #d3f296;
    font-weight: bold;
 }
 
@@ -165,10 +165,10 @@ li {
    padding: 15px;
    font-size: 20px;
    font-weight: 500;
-   border: #fff solid 3px;
-   border-radius: 0 8% 0 0;
+   border: var(--primary-color) solid 3px;
+   border-radius: 0 10% 0 0;
    color: var(--secondary-color);
-   box-shadow: 9px 4px 23px #000;
+   box-shadow: 9px 4px 23px #333;
 }
 
 .experience {
@@ -182,15 +182,18 @@ li {
    margin: 20px;
    padding: 20px;
    text-align: justify;
-   background: #cbdbaa;
+   border-radius: 25px;
+   color: #333;
+   background: rgba(211, 242, 150, 0.8);
    box-shadow: 9px 4px 23px;
 }
 .box-2 {
    margin: 20px;
    padding: 20px;
+   border-radius: 25px;
    text-align: justify;
    color: var(--secondary-color);
-   background: #32248f;
+   background: #333;
    box-shadow: 9px 4px 23px #000;
 }
 
@@ -198,7 +201,7 @@ li {
 
 .contact-img {
    background: url("../img/contact-secton.svg") no-repeat center center/cover;
-   background-size: auto 1196px;
+   background-size: auto 785px;
    height: 500px;
 }
 
@@ -216,7 +219,7 @@ li {
    padding-top: 2rem;
    font-size: 50px;
    text-align: center;
-   color: var(--primary-color);
+   color: var(--overlay-color);
 }
 
 .contact-ul {
