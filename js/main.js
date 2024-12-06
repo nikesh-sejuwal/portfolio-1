@@ -37,3 +37,8 @@ menu_btn.addEventListener("click", function () {
    mobile_menu.classList.toggle("is-active");
    //  mobile_men.classList.toggle("is-active");
 });
+
+const resume = document.querySelector(".resume");
+resume.addEventListener("click", () => {
+   alert("Adding soon, Thank you!!");
+});
